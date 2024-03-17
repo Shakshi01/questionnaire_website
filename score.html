@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Score Card</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  .score-card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .section {
+    margin-bottom: 15px;
+  }
+  .section-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .thank-you {
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0;
+  }
+  button {
+    padding: 10px 20px;
+    margin: auto;
+    display: block;
+  }
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .header {
+    width: 100%;
+    background-color: #f8f8f8; 
+    border-bottom: 1px solid #e7e7e7; 
+    padding: 10px 0; 
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-size: 24px; 
+    font-weight: bold;
+  }
+</style>
+<script>
+function showReadingSectionText() {
+  var readingSectionText = document.getElementById('reading-section-text');
+  readingSectionText.style.display = 'block'; // Make the text visible
+}
+</script>
+</head>
+<body>
+    <div class="header"> Score Card </div>
+<div class="container">
+  <h2>Score Card</h2>
+  <div class="score-card">
+    <div class="section">
+      <div class="section-title">Quantitative Section</div>
+      Number of Questions Answered: 2<br>
+      Number of Correct Answers: 2<br>
+      Score: 100
+    </div>
+
+    <div class="section">
+      <div class="section-title">Reading Section</div>
+      <select onchange="showReadingSectionText()">
+        <option value="">--Select an option--</option>
+        <option value="read1">Reading Passage 1</option>
+        <option value="read2">Reading Passage 2</option>
+        <option value="read3">Reading Passage 3</option>
+      </select>
+      <p id="reading-section-text" style="display:none;">
+        Generative AI, like OpenAI’s ChatGPT and Google’s Bard, relies on statistical probability. Today’s computers are powerful enough to train large language models on billions of pages of text. The models can detect the patterns of language well enough to respond with startling lucidity, but they do not truly understand the subject matter. Given a word or letter, the models reference their training data and determine the word or set of words most likely to come next.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Audio/Video Section</div>
+      <!-- Content for the Audio/Video Section -->
+    </div>
+    
+    <hr>
+    
+    <div class="thank-you">Thank You!!</div>
+    <button onclick="location.href='login.html';" type="button">Finish</button>
+  </div>
+</div>
+
+</body>
+</html>

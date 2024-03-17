@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cosine Page</title>
+<style>
+  body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .header {
+    background-color: #f8f8f8; 
+    border-bottom: 1px solid #e7e7e7; 
+    padding: 10px 0; 
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-size: 24px; 
+    font-weight: bold;
+  }
+  .container {
+    width: auto;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 80px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .answers {
+    column-count: 2;
+  }
+  .answers label {
+    display: block;
+    margin-bottom: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    margin-right: 5px;
+  }
+</style>
+</head>
+<body>
+<div class="header">Question 2</div>
+<div class="container">
+  <div>Select the cosine theorem formula.</div>
+  <form class="answers">
+    <label><input type="radio" name="cosine" value="cosAdd"> cos(α + β) = cos α cos β + sin α sin β</label>
+    <label><input type="radio" name="cosine" value="sinAdd"> sin α + sin β = 2 sin( (α + β) / 2 ) cos( (α - β) / 2 )</label>
+    <label><input type="radio" name="cosine" value="sinCos"> sin(α + β) = sin α cos β + cos α sin β</label>
+    <label><input type="radio" name="cosine" value="sinSubtract"> sin α - sin β = 2 cos( (α + β) / 2 ) sin( (α - β) / 2 )</label>
+  </form>
+  <div class="button-container">
+    <button onclick="location.href='english.html';" type="submit">Submit & Next Question</button>
+    <button onclick="location.href='cosine.html';" type="reset">Cancel & Clear Selection</button>
+  </div>
+</div>
+</body>
+</html>

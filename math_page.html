@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Question Page</title>
+<style>
+    
+    .container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh;
+    }
+    .question-side, .graph-side {
+        flex-basis: 50%; 
+        padding: 20px;
+    }
+    .question-container {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        height: 300px;
+        margin: auto; 
+    }
+    .graph-container {
+        text-align: center; 
+    }
+    .graph-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    <!-- .question-header {
+        margin-bottom: 20px;
+        text-align: center;
+    } -->
+    .answer-options {
+        list-style-type: none;
+        padding: 0;
+    }
+    .answer-options li {
+        margin-bottom: 10px;
+    }
+    .buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .buttons button {
+        padding: 10px 15px;
+        margin-right: 10px;
+    }
+    .question-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 10px 20px; 
+        border-bottom: 2px solid #ccc; 
+    }
+    .question-header h2 {
+        margin: 0; 
+        float: right; 
+        font-size: 1.5em; 
+    }
+    .header {
+        width: 100%;
+        background-color: #f8f8f8; 
+        border-bottom: 1px solid #e7e7e7; 
+        padding: 10px 0; 
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); 
+        text-align: center;
+        font-size: 24px; 
+        font-weight: bold;
+      }
+    .question-text {
+        margin: 20px 0; 
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        Question 1
+      </div>
+<div class="container">
+    <div class="question-side">
+        <div class="question-container">
+            <form>
+                <ul class="answer-options">
+                    <li>
+                      <input type="radio" id="option1" name="question" />
+                      <label for="option1">y = mx + b</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="option2" name="question" />
+                      <label for="option2">(x - h)<sup>2</sup> + (y - k)<sup>2</sup> = r<sup>2</sup></label>
+                    </li>
+                    <li>
+                      <input type="radio" id="option3" name="question" />
+                      <label for="option3">y - y<sub>1</sub> = m(x - x<sub>1</sub>)</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="option4" name="question" />
+                      <label for="option4">(y<sub>2</sub> - y<sub>1</sub>) / (x<sub>2</sub> - x<sub>1</sub>) = (y - y<sub>2</sub>) / (x - x<sub>2</sub>)</label>
+                    </li>
+                  </ul>
+                
+                <div class="buttons">
+                    <button onclick="location.href='cosine.html';" type="button">Submit & Next Question</button>
+                    <button onclick="location.href='math_page.html';" type="button">Cancel & Clear Selection</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="graph-side">
+        <div class="graph-container">
+            <img src="graph.png" alt="Graph Image" />
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
